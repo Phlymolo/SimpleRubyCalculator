@@ -1,0 +1,32 @@
+#Nathan Rapp
+#4/25/16
+#My simple calulator
+
+print "The calculator of awesomeness!\n"
+print "Enter a value: "
+first_num=gets.to_i 
+
+print "Enter another value: "
+second_num=gets.to_i
+
+print "1.Add\n2.Subtract\n3.Multiply\n4.Divide\n"
+pick=90 #arbitraryvalue greater than 4
+
+while pick>4 || pick<1
+	print "Pick: "
+	pick = gets.to_i
+	if pick==1
+		puts first_num.to_s + "+" + second_num.to_s + "=" + (first_num+second_num).to_s
+	elsif pick==2
+		puts first_num.to_s + "-" + second_num.to_s + "=" + (first_num-second_num).to_s
+	elsif pick==3
+		puts first_num.to_s + "*" + second_num.to_s + "=" + (first_num*second_num).to_s
+	elsif pick==4
+		puts first_num.to_s + "/" + second_num.to_s + "=" + (first_num/second_num).to_s
+	else
+		puts "Options are 1 - 4"	
+		next
+
+	end
+end
+
